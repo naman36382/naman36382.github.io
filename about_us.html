@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style type="text/css">
+body{
+background-color: black;
+position: fixed;
+}
+/*#container{
+background-color: black;
+height:1005px;
+width: 1900px;
+opacity: 50%;
+position: fixed;
+animation-name: start;
+margin-top: -50px;
+margin-left: -30px;
+}*/
+li{
+list-style-type: none;
+font-size: xx-large;
+}
+a{
+color: white;
+text-decoration: none;
+}
+#sidebar{
+background-color: black;
+width:250px;
+height: 635px;
+position: fixed;
+margin-top: 20px;
+text-align: center
+}
+#sidebar-o{
+background-color: white;
+width:260px;
+height: 700px;
+margin-left: -10px;
+margin-top: -20px;
+position: fixed;
+display: none;
+}
+
+
+#button-area{
+background-color: white;
+width:85px;
+height: 82px;
+position: fixed;
+text-align: center;
+border-radius: 20%
+}
+#heading{
+animation-name: headinganime;
+transition:0.5s;
+animation-fill-mode: forwards;
+}
+#button-area{
+animation-name: hamslide;
+transition:1s;
+animation-duration: 1s;
+margin-top: -300px;
+animation-fill-mode: forwards;
+
+}
+	@keyframes hamslide{
+0%{transform: translateY(0px);}
+100%{transform: translateY(300px);}
+	}
+
+</style>
+</head>
+<body>
+<div id="container">
+</div>
+<div id="sidebar-o">
+<div id="sidebar" style="color: white;">
+	<button style="font-size: xx-large;float: right;background-color: white;border:solid black;" onclick="sideclose()">X</button>
+<ul>
+<li><img src="https://cdn.discordapp.com/attachments/713809036583239840/713811370843570206/IMG_3021.JPG" height="150px" style="margin-top: 50px;"></li>
+<hr>
+<li><a href="">Home</a></li>
+<br>
+<li><a href="">About</li>
+<br>
+<li><a href="">Contact Us</a></li>
+<br>
+<li style="margin-left: -38px;"><a href="">LogIn</a></li>
+</ul>
+</div>
+</div>
+<div id="button-area">
+<button onclick="sidebutt()" style="border-radius: 20%;border:solid white;background-color: white;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png"height="76px" id="Hamburger_iconn"></button>
+</div>
+<!-- <div><h1 style="font-size: 40px;text-align: center;background-color: white;padding-left: 100px;">About Us</h1></div> -->
+<div id="content-about" style="padding-top: 100px;color: white;margin-bottom: -300px;">
+	<h1 style="margin-left: 700px;">Hi 
+	fellow Robloxians, Welcome to <b>N&O Productions</b>.We are currently working on a game <b><a href="https://web.roblox.com/games/5067015618/PrisonBust-EVERYTHING-REDONE?refPageId=ffa100cc-b9b1-4dca-93d4-b02de55dcd59">Prison Bust</a>.<a href="">Click here to Play our other games. </a></b></h1>
+</div>
+<a href=""></a><img src="https://cdn.discordapp.com/attachments/713809036583239840/713816916887863356/Snapshot_07-05-2020_20.JPG" style="height: 500px;padding-bottom: 200px;padding-left:70px;margin-top: 50px;"></a>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+function sidebutt(){
+document.getElementById('sidebar-o').style.display= "block";
+document.getElementById('Hamburger_iconn').style.display= "none";
+document.getElementById('button-area').style.display ="none";
+}
+function sideclose(){
+document.getElementById('sidebar-o').style.display= "none";	
+document.getElementById('button-area').style.display ="block";
+document.getElementById('Hamburger_iconn').style.display= "block";
+}
+</script>
